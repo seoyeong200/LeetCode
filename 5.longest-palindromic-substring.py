@@ -46,7 +46,7 @@ class Solution:
         - dp[i][j] = ( (s[i]==s[j]) && (dp[i+1][j-1]) ) 를 업데이트한다.
     """
     def longestPalindrome(self, s: str) -> str:
-        n = len(n)
+        n = len(s)
         dp = [[ False for _ in range(n)] for _ in range(n)]
         ans = (0, 0)
         for i in range(n): dp[i][i] = True
