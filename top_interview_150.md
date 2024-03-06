@@ -1,14 +1,14 @@
 
 
 < Array / String >
- - [x] 88. Merge Sorted Array 🟡
+ - [x] 88. Merge Sorted Array 🟡 [🔗](./88.merge-sorted-array.py)
  - [ ] 27. Remove Element 🟡
  - [ ] 26. Remove Duplicates from Sorted Array 🟡
- - [x] 80. Remove Duplicates from Sorted Array II 🟠
+ - [x] 80. Remove Duplicates from Sorted Array II 🟠 [🔗](./80.remove-duplicates-from-sorted-array-ii.py)
  - [ ] 169. Majority Element 🟡
- - [x] 189. Rotate Array 🟠
- - [x] 121. Best Time to Buy and Sell Stock 🟡
- - [x] 122. Best Time to Buy and Sell Stock II 🟠
+ - [x] 189. Rotate Array 🟠 [🔗](./189.rotate-array.py)
+ - [x] 121. Best Time to Buy and Sell Stock 🟡 [🔗](./121.best-time-to-buy-and-sell-stock.py)
+ - [x] 122. Best Time to Buy and Sell Stock II 🟠 [🔗](./122.best-time-to-buy-and-sell-stock-ii.py)
  - [ ] 55. Jump Game 🟠
  - [ ] 45. Jump Game II 🟠
  - [ ] 274. H-Index 🟠
@@ -17,11 +17,11 @@
  - [ ] 134. Gas Station 🟠
  - [ ] 135. Candy 🔴
  - [ ] 42. Trapping Rain Water 🔴
- - [x] 13. Roman to Integer 🟡
+ - [x] 13. Roman to Integer 🟡 [🔗](./13.roman-to-integer.py)
  - [ ] 12. Integer to Roman 🟠
  - [ ] 58. Length of Last Word 🟡
- - [x] 14. Longest Common Prefix 🟡
- - [x] 151. Reverse Words in a String 🟠
+ - [x] 14. Longest Common Prefix 🟡 [🔗](./14.longest-common-prefix.py)
+ - [x] 151. Reverse Words in a String 🟠 [🔗](./151.reverse-words-in-a-string.py)
  - [ ] 6. Zigzag Conversion 🟠
  - [ ] 28. Find the Index of the First Occurrence in a String 🟡
  - [ ] 68. Text Justification 🔴
@@ -30,14 +30,14 @@
 < Two Pointers >
  - [ ] 125. Valid Palindrome 🟡
  - [ ] 392. Is Subsequence 🟡
- - [x] 167. Two Sum II - Input Array Is Sorted 🟠
- - [x] 11. Container With Most Water 🟠
- - [x] 15. 3Sum 🟠
+ - [x] 167. Two Sum II - Input Array Is Sorted 🟠 [🔗](./167.two-sum-ii-input-array-is-sorted.py)
+ - [x] 11. Container With Most Water 🟠 [🔗](./11.container-with-most-water.py)
+ - [x] 15. 3Sum 🟠 [🔗](./15.3sum.py)
 3 / 5 (60%)
 
 < Sliding Window >
  - [ ] 209. Minimum Size Subarray Sum 🟠
- - [x] 3. Longest Substring Without Repeating Characters 🟠
+ - [x] 3. Longest Substring Without Repeating Characters 🟠 [🔗](./3.longest-substring-without-repeating-characters.py)
  - [ ] 30. Substring with Concatenation of All Words 🔴
  - [ ] 76. Minimum Window Substring 🔴
 1 / 4 (25%)
@@ -56,7 +56,7 @@
  - [ ] 290. Word Pattern 🟡
  - [ ] 242. Valid Anagram 🟡
  - [ ] 49. Group Anagrams 🟠
- - [x] 1. Two Sum 🟡
+ - [x] 1. Two Sum 🟡 [🔗](./1.two-sum.py)
  - [ ] 202. Happy Number 🟡
  - [ ] 219. Contains Duplicate II 🟡
  - [ ] 128. Longest Consecutive Sequence 🟠
@@ -79,12 +79,12 @@
 
 < Linked List >
  - [ ] 141. Linked List Cycle 🟡
- - [x] 2. Add Two Numbers 🟠
+ - [x] 2. Add Two Numbers 🟠 [🔗](./2.add-two-numbers.py)
  - [ ] 21. Merge Two Sorted Lists 🟡
  - [ ] 138. Copy List with Random Pointer 🟠
  - [ ] 92. Reverse Linked List II 🟠
  - [ ] 25. Reverse Nodes in k-Group 🔴
- - [x] 19. Remove Nth Node From End of List 🟠
+ - [x] 19. Remove Nth Node From End of List 🟠 [🔗](./19.remove-nth-node-from-end-of-list.py)
  - [ ] 82. Remove Duplicates from Sorted List II 🟠
  - [ ] 61. Rotate List 🟠
  - [ ] 86. Partition List 🟠
@@ -160,7 +160,7 @@
 0 / 4 (0%)
 
 < Kadane's Algorithm >
- - [x] 53. Maximum Subarray 🟠
+ - [x] 53. Maximum Subarray 🟠 [🔗](./53.maximum-subarray.py)
  - [ ] 954. Maximum Sum Circular Subarray 🟠
 1 / 2 (50%)
 
@@ -168,14 +168,14 @@
  - [ ] 35. Search Insert Position 🟡
  - [ ] 74. Search a 2D Matrix 🟠
  - [ ] 162. Find Peak Element 🟠
- - [x] 33. Search in Rotated Sorted Array 🟠
+ - [x] 33. Search in Rotated Sorted Array 🟠 [🔗](./33.search-in-rotated-sorted-array.py)
  - [ ] 34. Find First and Last Position of Element in Sorted Array 🟠
  - [ ] 153. Find Minimum in Rotated Sorted Array 🟠
  - [ ] 4. Median of Two Sorted Arrays 🔴
 1 / 7 (14%)
 
 < Heap >
- - [x] 215. Kth Largest Element in an Array 🟠
+ - [x] 215. Kth Largest Element in an Array 🟠 [🔗](./215.kth-largest-element-in-an-array.py)
  - [ ] 502. IPO 🔴
  - [ ] 373. Find K Pairs with Smallest Sums 🟠
  - [ ] 295. Find Median from Data Stream 🔴
@@ -191,7 +191,7 @@
 0 / 6 (0%)
 
 < Math >
- - [x] 9. Palindrome Number 🟡
+ - [x] 9. Palindrome Number 🟡 [🔗](./9.palindrome-number.py)
  - [ ] 66. Plus One 🟡
  - [ ] 172. Factorial Trailing Zeroes 🟠
  - [ ] 69. Sqrt(x) 🟡
@@ -200,7 +200,7 @@
 1 / 6 (16%)
 
 < 1D DP >
- - [x] 70. Climbing Stairs 🟡
+ - [x] 70. Climbing Stairs 🟡 [🔗](./70.climbing-stairs.py)
  - [ ] 198. House Robber 🟠
  - [ ] 139. Word Break 🟠
  - [ ] 322. Coin Change 🟠
@@ -211,7 +211,7 @@
  - [ ] 120. Triangle 🟠
  - [ ] 64. Minimum Path Sum 🟠
  - [ ] 63. Unique Paths II 🟠
- - [x] 5. Longest Palindromic Substring 🟠
+ - [x] 5. Longest Palindromic Substring 🟠 [🔗](./5.longest-palindromic-substring.py)
  - [ ] 97. Interleaving String 🟠
  - [ ] 72. Edit Distance 🟠
  - [ ] 123. Best Time to Buy and Sell Stock III 🔴

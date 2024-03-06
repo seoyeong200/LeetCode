@@ -29,10 +29,11 @@ if script_tag:
                     elif q['difficulty'] == 'HARD': diff = '🔴'
 
                     if q['id'] in solved:
-                        status = 'x'; cnt+=1
-                    else: status = ' '
+                        f.write(f" - [x] {q['id']}. {q['title']} {diff} [🔗](./{q['id']}.{q['titleSlug']}.py)\n")
+                        cnt+=1
+                    else: 
+                        f.write(f" - [ ] {q['id']}. {q['title']} {diff}\n")
 
-                    f.write(f" - [{status}] {q['id']}. {q['title']} {diff}\n")
                 f.write(f"{cnt} / {c['questionNum']} ({int(cnt/int(c['questionNum'])*100)}%)")
                 f.close()
                     
