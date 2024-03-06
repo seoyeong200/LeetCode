@@ -25,7 +25,7 @@
  - [ ] 6. Zigzag Conversion 🟠
  - [ ] 28. Find the Index of the First Occurrence in a String 🟡
  - [ ] 68. Text Justification 🔴
-
+8 / 24 (33%)
 
 < Two Pointers >
  - [ ] 125. Valid Palindrome 🟡
@@ -33,14 +33,14 @@
  - [x] 167. Two Sum II - Input Array Is Sorted 🟠
  - [x] 11. Container With Most Water 🟠
  - [x] 15. 3Sum 🟠
-
+3 / 5 (60%)
 
 < Sliding Window >
  - [ ] 209. Minimum Size Subarray Sum 🟠
  - [x] 3. Longest Substring Without Repeating Characters 🟠
  - [ ] 30. Substring with Concatenation of All Words 🔴
  - [ ] 76. Minimum Window Substring 🔴
-
+1 / 4 (25%)
 
 < Matrix >
  - [ ] 36. Valid Sudoku 🟠
@@ -48,7 +48,7 @@
  - [ ] 48. Rotate Image 🟠
  - [ ] 73. Set Matrix Zeroes 🟠
  - [ ] 289. Game of Life 🟠
-
+0 / 5 (0%)
 
 < Hashmap >
  - [ ] 383. Ransom Note 🟡
@@ -60,14 +60,14 @@
  - [ ] 202. Happy Number 🟡
  - [ ] 219. Contains Duplicate II 🟡
  - [ ] 128. Longest Consecutive Sequence 🟠
-
+1 / 9 (11%)
 
 < Intervals >
  - [ ] 228. Summary Ranges 🟡
  - [ ] 56. Merge Intervals 🟠
  - [ ] 57. Insert Interval 🟠
  - [ ] 452. Minimum Number of Arrows to Burst Balloons 🟠
-
+0 / 4 (0%)
 
 < Stack >
  - [ ] 20. Valid Parentheses 🟡
@@ -75,7 +75,7 @@
  - [ ] 155. Min Stack 🟠
  - [ ] 150. Evaluate Reverse Polish Notation 🟠
  - [ ] 224. Basic Calculator 🔴
-
+0 / 5 (0%)
 
 < Linked List >
  - [ ] 141. Linked List Cycle 🟡
@@ -89,7 +89,7 @@
  - [ ] 61. Rotate List 🟠
  - [ ] 86. Partition List 🟠
  - [ ] 146. LRU Cache 🟠
-
+2 / 11 (18%)
 
 < Binary Tree General >
  - [ ] 104. Maximum Depth of Binary Tree 🟡
@@ -106,20 +106,20 @@
  - [ ] 173. Binary Search Tree Iterator 🟠
  - [ ] 222. Count Complete Tree Nodes 🟡
  - [ ] 236. Lowest Common Ancestor of a Binary Tree 🟠
-
+0 / 14 (0%)
 
 < Binary Tree BFS >
  - [ ] 199. Binary Tree Right Side View 🟠
  - [ ] 637. Average of Levels in Binary Tree 🟡
  - [ ] 102. Binary Tree Level Order Traversal 🟠
  - [ ] 103. Binary Tree Zigzag Level Order Traversal 🟠
-
+0 / 4 (0%)
 
 < Binary Search Tree >
  - [ ] 530. Minimum Absolute Difference in BST 🟡
  - [ ] 230. Kth Smallest Element in a BST 🟠
  - [ ] 98. Validate Binary Search Tree 🟠
-
+0 / 3 (0%)
 
 < Graph General >
  - [ ] 200. Number of Islands 🟠
@@ -128,19 +128,19 @@
  - [ ] 399. Evaluate Division 🟠
  - [ ] 207. Course Schedule 🟠
  - [ ] 210. Course Schedule II 🟠
-
+0 / 6 (0%)
 
 < Graph BFS >
  - [ ] 945. Snakes and Ladders 🟠
  - [ ] 433. Minimum Genetic Mutation 🟠
  - [ ] 127. Word Ladder 🔴
-
+0 / 3 (0%)
 
 < Trie >
  - [ ] 208. Implement Trie (Prefix Tree) 🟠
  - [ ] 211. Design Add and Search Words Data Structure 🟠
  - [ ] 212. Word Search II 🔴
-
+0 / 3 (0%)
 
 < Backtracking >
  - [ ] 17. Letter Combinations of a Phone Number 🟠
@@ -150,19 +150,19 @@
  - [ ] 52. N-Queens II 🔴
  - [ ] 22. Generate Parentheses 🟠
  - [ ] 79. Word Search 🟠
-
+0 / 7 (0%)
 
 < Divide & Conquer >
  - [ ] 108. Convert Sorted Array to Binary Search Tree 🟡
  - [ ] 148. Sort List 🟠
  - [ ] 772. Construct Quad Tree 🟠
  - [ ] 23. Merge k Sorted Lists 🔴
-
+0 / 4 (0%)
 
 < Kadane's Algorithm >
  - [x] 53. Maximum Subarray 🟠
  - [ ] 954. Maximum Sum Circular Subarray 🟠
-
+1 / 2 (50%)
 
 < Binary Search >
  - [ ] 35. Search Insert Position 🟡
@@ -172,14 +172,14 @@
  - [ ] 34. Find First and Last Position of Element in Sorted Array 🟠
  - [ ] 153. Find Minimum in Rotated Sorted Array 🟠
  - [ ] 4. Median of Two Sorted Arrays 🔴
-
+1 / 7 (14%)
 
 < Heap >
  - [x] 215. Kth Largest Element in an Array 🟠
  - [ ] 502. IPO 🔴
  - [ ] 373. Find K Pairs with Smallest Sums 🟠
  - [ ] 295. Find Median from Data Stream 🔴
-
+1 / 4 (25%)
 
 < Bit Manipulation >
  - [ ] 67. Add Binary 🟡
@@ -188,7 +188,7 @@
  - [ ] 136. Single Number 🟡
  - [ ] 137. Single Number II 🟠
  - [ ] 201. Bitwise AND of Numbers Range 🟠
-
+0 / 6 (0%)
 
 < Math >
  - [x] 9. Palindrome Number 🟡
@@ -197,7 +197,7 @@
  - [ ] 69. Sqrt(x) 🟡
  - [ ] 50. Pow(x, n) 🟠
  - [ ] 149. Max Points on a Line 🔴
-
+1 / 6 (16%)
 
 < 1D DP >
  - [x] 70. Climbing Stairs 🟡
@@ -205,7 +205,7 @@
  - [ ] 139. Word Break 🟠
  - [ ] 322. Coin Change 🟠
  - [ ] 300. Longest Increasing Subsequence 🟠
-
+1 / 5 (20%)
 
 < Multidimensional DP >
  - [ ] 120. Triangle 🟠
@@ -217,3 +217,4 @@
  - [ ] 123. Best Time to Buy and Sell Stock III 🔴
  - [ ] 188. Best Time to Buy and Sell Stock IV 🔴
  - [ ] 221. Maximal Square 🟠
+1 / 9 (11%)
