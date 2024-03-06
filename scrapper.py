@@ -1,6 +1,8 @@
-import requests
+import requests, json, os
 from bs4 import BeautifulSoup
-import json
+
+files = os.listdir('./')
+solved = set([f.split('.')[0] for f in files if 'py' in f and f!='scrapper.py'])
 
 url = 'https://leetcode.com/studyplan/top-interview-150/'
 response = requests.get(url)
@@ -17,14 +19,15 @@ if script_tag:
         category = data['props']['pageProps']['dehydratedState']['queries'][0]['state']['data']['studyPlanV2Detail']['planSubGroups']
         for c in category:
             with open('top_interview_150.md', 'a', encoding='utf-8') as f:
-                f.write(f"""< {c['name']} >\n""")
+                f.write(f"""\n\n< {c['name']} >\n""")
                 for q in c['questions']:
-                    if q['difficulty'] == 'EASY':
-                        f.write(f" - [ ] {q['id']}. {q['title']} 🟡\n")
-                    elif q['difficulty'] == 'MEDIUM':
-                        f.write(f" - [ ] {q['id']}. {q['title']} 🟠\n")
-                    elif q['difficulty'] == 'HARD':
-                        f.write(f" - [ ] {q['id']}. {q['title']} 🔴\n")
+                    if q['difficulty'] == 'EASY': diff = '🟡'
+                    elif q['difficulty'] == 'MEDIUM': diff = '🟠'
+                    elif q['difficulty'] == 'HARD': diff = '🔴'
+
+                    status = 'x' if q['id'] in solved else ' '
+                    
+                    f.write(f" - [{status}] {q['id']}. {q['title']} {diff}\n")
                 f.close()
                     
 
