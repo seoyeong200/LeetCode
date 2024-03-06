@@ -1,13 +1,13 @@
 # Algorithm
 < Array / String >
- - [ ] 88. Merge Sorted Array 🟡
+ - [x] 88. Merge Sorted Array 🟡
  - [ ] 27. Remove Element 🟡
  - [ ] 26. Remove Duplicates from Sorted Array 🟡
- - [ ] 80. Remove Duplicates from Sorted Array II 🟠
+ - [x] 80. Remove Duplicates from Sorted Array II 🟠
  - [ ] 169. Majority Element 🟡
- - [ ] 189. Rotate Array 🟠
- - [ ] 121. Best Time to Buy and Sell Stock 🟡
- - [ ] 122. Best Time to Buy and Sell Stock II 🟠
+ - [x] 189. Rotate Array 🟠
+ - [x] 121. Best Time to Buy and Sell Stock 🟡
+ - [x] 122. Best Time to Buy and Sell Stock II 🟠
  - [ ] 55. Jump Game 🟠
  - [ ] 45. Jump Game II 🟠
  - [ ] 274. H-Index 🟠
@@ -16,11 +16,11 @@
  - [ ] 134. Gas Station 🟠
  - [ ] 135. Candy 🔴
  - [ ] 42. Trapping Rain Water 🔴
- - [ ] 13. Roman to Integer 🟡
+ - [x] 13. Roman to Integer 🟡
  - [ ] 12. Integer to Roman 🟠
  - [ ] 58. Length of Last Word 🟡
- - [ ] 14. Longest Common Prefix 🟡
- - [ ] 151. Reverse Words in a String 🟠
+ - [x] 14. Longest Common Prefix 🟡
+ - [x] 151. Reverse Words in a String 🟠
  - [ ] 6. Zigzag Conversion 🟠
  - [ ] 28. Find the Index of the First Occurrence in a String 🟡
  - [ ] 68. Text Justification 🔴
@@ -29,14 +29,14 @@
 < Two Pointers >
  - [ ] 125. Valid Palindrome 🟡
  - [ ] 392. Is Subsequence 🟡
- - [ ] 167. Two Sum II - Input Array Is Sorted 🟠
- - [ ] 11. Container With Most Water 🟠
- - [ ] 15. 3Sum 🟠
+ - [x] 167. Two Sum II - Input Array Is Sorted 🟠
+ - [x] 11. Container With Most Water 🟠
+ - [x] 15. 3Sum 🟠
 
 
 < Sliding Window >
  - [ ] 209. Minimum Size Subarray Sum 🟠
- - [ ] 3. Longest Substring Without Repeating Characters 🟠
+ - [x] 3. Longest Substring Without Repeating Characters 🟠
  - [ ] 30. Substring with Concatenation of All Words 🔴
  - [ ] 76. Minimum Window Substring 🔴
 
@@ -55,7 +55,7 @@
  - [ ] 290. Word Pattern 🟡
  - [ ] 242. Valid Anagram 🟡
  - [ ] 49. Group Anagrams 🟠
- - [ ] 1. Two Sum 🟡
+ - [x] 1. Two Sum 🟡
  - [ ] 202. Happy Number 🟡
  - [ ] 219. Contains Duplicate II 🟡
  - [ ] 128. Longest Consecutive Sequence 🟠
@@ -78,12 +78,12 @@
 
 < Linked List >
  - [ ] 141. Linked List Cycle 🟡
- - [ ] 2. Add Two Numbers 🟠
+ - [x] 2. Add Two Numbers 🟠
  - [ ] 21. Merge Two Sorted Lists 🟡
  - [ ] 138. Copy List with Random Pointer 🟠
  - [ ] 92. Reverse Linked List II 🟠
  - [ ] 25. Reverse Nodes in k-Group 🔴
- - [ ] 19. Remove Nth Node From End of List 🟠
+ - [x] 19. Remove Nth Node From End of List 🟠
  - [ ] 82. Remove Duplicates from Sorted List II 🟠
  - [ ] 61. Rotate List 🟠
  - [ ] 86. Partition List 🟠
@@ -159,7 +159,7 @@
 
 
 < Kadane's Algorithm >
- - [ ] 53. Maximum Subarray 🟠
+ - [x] 53. Maximum Subarray 🟠
  - [ ] 954. Maximum Sum Circular Subarray 🟠
 
 
@@ -167,14 +167,14 @@
  - [ ] 35. Search Insert Position 🟡
  - [ ] 74. Search a 2D Matrix 🟠
  - [ ] 162. Find Peak Element 🟠
- - [ ] 33. Search in Rotated Sorted Array 🟠
+ - [x] 33. Search in Rotated Sorted Array 🟠
  - [ ] 34. Find First and Last Position of Element in Sorted Array 🟠
  - [ ] 153. Find Minimum in Rotated Sorted Array 🟠
  - [ ] 4. Median of Two Sorted Arrays 🔴
 
 
 < Heap >
- - [ ] 215. Kth Largest Element in an Array 🟠
+ - [x] 215. Kth Largest Element in an Array 🟠
  - [ ] 502. IPO 🔴
  - [ ] 373. Find K Pairs with Smallest Sums 🟠
  - [ ] 295. Find Median from Data Stream 🔴
@@ -190,7 +190,7 @@
 
 
 < Math >
- - [ ] 9. Palindrome Number 🟡
+ - [x] 9. Palindrome Number 🟡
  - [ ] 66. Plus One 🟡
  - [ ] 172. Factorial Trailing Zeroes 🟠
  - [ ] 69. Sqrt(x) 🟡
@@ -199,7 +199,7 @@
 
 
 < 1D DP >
- - [ ] 70. Climbing Stairs 🟡
+ - [x] 70. Climbing Stairs 🟡
  - [ ] 198. House Robber 🟠
  - [ ] 139. Word Break 🟠
  - [ ] 322. Coin Change 🟠
@@ -210,7 +210,7 @@
  - [ ] 120. Triangle 🟠
  - [ ] 64. Minimum Path Sum 🟠
  - [ ] 63. Unique Paths II 🟠
- - [ ] 5. Longest Palindromic Substring 🟠
+ - [x] 5. Longest Palindromic Substring 🟠
  - [ ] 97. Interleaving String 🟠
  - [ ] 72. Edit Distance 🟠
  - [ ] 123. Best Time to Buy and Sell Stock III 🔴
