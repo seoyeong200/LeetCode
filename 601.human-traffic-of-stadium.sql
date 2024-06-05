@@ -47,9 +47,22 @@ select id , visit_date, people,
 from Stadium
 where people>=100
 
-
-/**************Solutions**********/
-
+-- beats 100% 의도치않게... 뿌듯한 나의 쿼리 (소중)
+select id, visit_date, people
+from (
+    select id, id-row_number() over() as id_diff, visit_date, people
+    from Stadium
+    where people > 99 
+) as tbl2
+where id_diff in (select distinct(id_diff)
+                    from (
+                        select id, 
+                            id-row_number() over() as id_diff,
+                            if(id+2 =lead(id, 2) over (), true, false) as is_at_least_three 
+                        from Stadium
+                        where people > 99
+                    ) as tbl1
+                    where is_at_least_three = 1)
 
 -- @lc code=end
 
