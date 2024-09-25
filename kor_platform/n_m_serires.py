@@ -59,13 +59,24 @@ def n_m_3(n, m):
     recursion('')
 
 def n_m_4(n, m):
-    pass
+    """
+    같은 수 여러번 골라도 되는데 비내림차순
+    """
+    def recursion(string):
+        x = 0 if string == '' else int(string[-1])
+        if len(string) == m:
+            print(' '.join(string))
+            return
+        for i in range(x, n+1):
+            if i == 0: continue
+            recursion(string + str(i))
+    recursion('')
 
 def n_m_5(n, m):
     lst = list(map(int, input()))
     pass
 
 # n, m = map(int, input().split())
-n, m = 3, 3
+n, m = 4, 2
 # print(f"n={n} m={m}")
-n_m_3(n, m)
+n_m_4(n, m)
