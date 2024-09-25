@@ -73,10 +73,32 @@ def n_m_4(n, m):
     recursion('')
 
 def n_m_5(n, m):
-    lst = list(map(int, input()))
-    pass
+    """
+    주어진 n개의 서로 다른 자연수 중 m개 고르는 수열.
+    수열 사전 순으로 증가하는 순서로 출력해야 함
+
+    앞에 12 13 14 21 23 24 31 32 34 41 42 43 만드는거랑 똑같은 케이스
+    """
+    lst = sorted(input().split())
+    def recursion(string: str):
+        """
+        리스트 원소로 string 받는게 아니라, 지금 n에 8보다 작은 자연수니까
+        리스트 인덱스 들고 다니다가 출력할때 실제 값으로 출력해야됨
+        """
+        if string in visited:
+            return
+        if len(string) == m:
+            visited.add(string)
+            print(' '.join([lst[int(s)] for s in string]))
+            return
+        
+        iter = sorted(list(set([str(x) for x in range(n)]) - set(string)))
+        for i in iter:
+            recursion(string + str(i))
+    visited = set()
+    recursion('')
+
 
 # n, m = map(int, input().split())
-n, m = 4, 2
-# print(f"n={n} m={m}")
-n_m_4(n, m)
+n, m = 5, 3
+n_m_5(n, m)
