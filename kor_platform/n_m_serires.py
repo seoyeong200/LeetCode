@@ -25,7 +25,26 @@ def n_m_1(n, m):
 
 
 def n_m_2(n, m):
-    pass
+    """
+    1부터 n까지 자연수 중에서 중복없이 m개 고르는데 수열이 오름차순이어야됨
+    - 다음 재귀에서 숫자가 작아질 일이 없으니까 리스트로 다음 값 후보를 계속 들고다닐거없이
+    - 그냥 현재 값 기준으로 증가시키면서 다음 노드 호출하면 될 것 같음
+    - dfs. 
+    """
+    def recursion(string: str):
+        x = 0 if string == '' else int(string[-1])
+        if string in visited: return
+        if len(string) == m:
+            print(' '.join(string))
+            visited.add(string)
+            return
+        if x == n: return
+
+        for i in range(x+1, n+1):
+            recursion(string + str(i))
+
+    visited = set()
+    recursion('')
 
 def n_m_3(n, m):
     pass
@@ -37,7 +56,7 @@ def n_m_5(n, m):
     lst = list(map(int, input()))
     pass
 
-n, m = map(int, input().split())
-# n, m = 4, 4
+# n, m = map(int, input().split())
+n, m = 4, 2
 # print(f"n={n} m={m}")
-n_m_1(n, m)
+n_m_2(n, m)
