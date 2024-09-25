@@ -18,7 +18,6 @@ def n_m_1(n, m):
             avail_lst.discard(i)
             recursion(string + str(i), avail_lst)
             avail_lst.add(i)
-            # recursion(string, avail_lst)
 
     visited = set()
     recursion('', set([i for i in range(1, n+1)]))
@@ -47,7 +46,17 @@ def n_m_2(n, m):
     recursion('')
 
 def n_m_3(n, m):
-    pass
+    """
+    같은 수를 여러번 골라도되는 1-n 중 m개 고른 수열
+    """
+    def recursion(string: str):
+        if len(string) == m:
+            print(' '.join(string))
+            return
+        for i in range(1, n+1):
+            recursion(string + str(i))
+
+    recursion('')
 
 def n_m_4(n, m):
     pass
@@ -57,6 +66,6 @@ def n_m_5(n, m):
     pass
 
 # n, m = map(int, input().split())
-n, m = 4, 2
+n, m = 3, 3
 # print(f"n={n} m={m}")
-n_m_2(n, m)
+n_m_3(n, m)
