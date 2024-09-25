@@ -79,6 +79,7 @@ def n_m_5(n, m):
 
     앞에 12 13 14 21 23 24 31 32 34 41 42 43 만드는거랑 똑같은 케이스
     """
+    # ********* 내 풀이 ***********
     lst = sorted(input().split())
     def recursion(string: str):
         """
@@ -96,8 +97,29 @@ def n_m_5(n, m):
         for i in iter:
             recursion(string + str(i))
     visited = set()
-    recursion('')
+    # recursion('')
 
+    # ********* 풀이참고 ***********
+    def recursion2(cur_seq: list):
+        """
+        :cur_seq: 선택한 값들을 담고있는 리스트
+        """
+        if len(cur_seq) == m:
+            print(' '.join(map(str, cur_seq)))
+            return 
+        
+        # 아직 선택됟지 않은 값들 중에서 차례대로 골라서 수열에 추가
+        for i in range(len(lst)):
+            if not visited[i]:
+                visited[i] = True
+                cur_seq.append(lst[i])
+                recursion2(cur_seq)
+                cur_seq.pop()
+                visited[i] = False
+    lst = sorted(list(map(int, input().split())))
+    visited = [False] * n
+    recursion2([])
+        
 
 # n, m = map(int, input().split())
 n, m = 5, 3
