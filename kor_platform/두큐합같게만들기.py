@@ -1,11 +1,4 @@
 def solution(queue1, queue2):
-    """
-    완전탐색 -> 여기서 더 최적화 가능한지 생각해보기
-    완전탐색 : 
-    [3 2 7 2] 14 [4 6 5 1] 11
-    [2 7 2] 11 [4 6 5 1 3] 19
-    [2 7 2 4] 15 [6 5 1 3] 15
-    """
     if (sum(queue1) + sum(queue2)) % 2: return -1
     n = len(queue1) + len(queue2)
     

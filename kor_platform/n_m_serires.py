@@ -119,8 +119,31 @@ def n_m_5(n, m):
     lst = sorted(list(map(int, input().split())))
     visited = [False] * n
     recursion2([])
-        
+
+
+def n_m_6(n, m):
+    """
+    n개 자연수 중 m개 고른 오름차순 수열 구하기
+    """
+    
+    def recursion(cur_seq: list):
+        if len(cur_seq) == m:
+            print(' '.join(map(str, cur_seq)))
+            return
+
+        for i in range(len(cur_seq), len(lst)):
+            if len(cur_seq) > 0 and cur_seq[-1] >= lst[i]: continue
+            if visited[i]: continue
+            visited[i] = True
+            cur_seq.append(lst[i])
+            recursion(cur_seq)
+            cur_seq.pop()
+            visited[i] = False
+
+    lst = sorted(list(map(int, input().split())))
+    visited = [False] * n
+    recursion([])
 
 # n, m = map(int, input().split())
-n, m = 5, 3
-n_m_5(n, m)
+n, m = 4, 4
+n_m_6(n, m)
