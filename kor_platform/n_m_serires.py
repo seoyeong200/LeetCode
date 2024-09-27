@@ -157,6 +157,20 @@ def n_m_7(n, m):
             recursion(string + [i])
     recursion([])
 
+def n_m_8(n, m):
+    """
+    7에서 비내림차순 조건 추가
+    """
+    lst = sorted(list(map(int, input().split())))
+    def recursion(string: list):
+        if len(string) == m:
+            print(' '.join(map(str, string)))
+            return
+        for i in lst:
+            if string != [] and i < string[-1]: continue
+            recursion(string + [i])
+    recursion([])
+
 
 
 
