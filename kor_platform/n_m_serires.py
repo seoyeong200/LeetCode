@@ -194,7 +194,29 @@ def n_m_9(n, m):
     visited_idx = [False] * n
     recursion([])
 
+def n_m_10(n, m):
+    """
+    중복있는 n개 원소 갖는 리스트로 m개 뽑아서 비내림차순 순열 생성
+    """
+    lst = sorted(list(map(int, input().split())))
+    def recursion(string: list):
+        perm_str = ' '.join(map(str, string))
+        if perm_str in visited_set: return
+        visited_set.add(perm_str)
+        if len(string) == m:
+            print(perm_str)
+            return
+        for i in range(n):
+            if visited[i] or \
+                (string != [] and lst[i] < string[-1]): continue
+            visited[i] = True
+            recursion(string + [lst[i]])
+            visited[i] = False
+    visited_set = set()
+    visited = [False] * n
+    recursion([])
+
 
 # n, m = map(int, input().split())
-n, m = 4, 2
-n_m_9(n, m)
+n, m = 4, 3
+n_m_10(n, m)
