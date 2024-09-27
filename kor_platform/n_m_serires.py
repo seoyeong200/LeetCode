@@ -235,6 +235,27 @@ def n_m_11(n, m):
     visited = set()
     recursion([])
 
+def n_m_12(n, m):
+    """
+    중복 있는 수열, 중복으로 뽑아도 됨, 비내림차순으로 만들기
+    """
+
+    lst = sorted(list(map(int, input().split())))
+    def recursion(string: list):
+        perm_str = ' '.join(map(str, string))
+        if perm_str in visited: return
+        visited.add(perm_str)
+        if len(string) == m:
+            print(perm_str)
+            return 
+        
+        for i in range(n):
+            if string != [] and lst[i] < string[-1]: continue
+            recursion(string + [lst[i]])
+    visited = set()
+    recursion([])
+
+
 # n, m = map(int, input().split())
-n, m = 4, 4
-n_m_11(n, m)
+n, m = 4, 2
+n_m_12(n, m)
