@@ -144,6 +144,22 @@ def n_m_6(n, m):
     visited = [False] * n
     recursion([])
 
+def n_m_7(n, m):
+    """
+    N개 중 m개 고르는데 같은 수 여러번 골라도 됨
+    """
+    lst = sorted(list(map(int, input().split())))
+    def recursion(string: list):
+        if len(string) == m:
+            print(' '.join(map(str, string)))
+            return
+        for i in lst:
+            recursion(string + [i])
+    recursion([])
+
+
+
+
 # n, m = map(int, input().split())
-n, m = 4, 4
-n_m_6(n, m)
+n, m = 4, 2
+n_m_9(n, m)
