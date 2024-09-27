@@ -171,7 +171,28 @@ def n_m_8(n, m):
             recursion(string + [i])
     recursion([])
 
-
+def n_m_9(n, m):
+    """
+    수열에 중복되는 원소 존재
+    """
+    lst = sorted(list(map(int, input().split())))
+    def recursion(string: list):
+        perm_str = ' '.join(map(str, string))
+        if perm_str in visited: return
+        visited.add(perm_str)
+        if len(string) == m:
+            print(perm_str)
+            return
+        # 나를 제외한 다른 모든 원소들이 다음 선택 후보.
+        for i in range(n):
+            if visited_idx[i]: continue
+            visited_idx[i] = True
+            recursion(string + [lst[i]])
+            visited_idx[i] = False
+        
+    visited = set()
+    visited_idx = [False] * n
+    recursion([])
 
 
 # n, m = map(int, input().split())
