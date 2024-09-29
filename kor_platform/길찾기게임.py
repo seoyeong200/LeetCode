@@ -26,16 +26,60 @@ y값 같으면 같은 height, 이진트리니까 y값 큰것(2^0)부터 7[8,6]
             9[2,2]]
 2. 트리에서 preorder, postorder
 """
-def solution(nodeinfo):
-    from collections import deque
-    answer = [[]]
-    for i in range(len(nodeinfo)):
-        nodeinfo[i].append(i+1)
-    nodeinfo.sort(key=lambda x: (-x[1], x[0]))
-    print(nodeinfo)
+class Node:
+    def __init__(self, id, x, y) -> None:
+        self.id = id
+        self.x, self.y = x, y
+        self.left, self.right = None, None
 
-    q = deque(nodeinfo[0])
+    def __lt__(self, other):
+        if self.y == other.y:
+            return self.x < other.x
+        return self.y > other.y
+
+def addNode(parent, child):
+    if child.x < parent.x:
+        if parent.left is None:
+            parent.left = child
+        else:
+            addNode(parent.left, child)
+    else:
+        if parent.right is None:
+            parent.right = child
+        else:
+            addNode(parent.right, child)
+
+def preorder(ans, node):
+    if node is None: return
+    ans.append(node.id)
+    preorder(ans, node.left)
+    preorder(ans, node.right)
+
+def postorder(ans, node):
+    if node is None: return
+    postorder(ans, node.left)
+    postorder(ans, node.right)
+    ans.append(node.id)
     
+
+def solution(nodeinfo):
+    n = len(nodeinfo)
+    nodeList = []
+    for i in range(n):
+        nodeList.append(Node(i+1, nodeinfo[i][0], nodeinfo[i][1]))
+    nodeList.sort()
+    
+    # 트리 만들기
+    root = nodeList[0]
+    for i in range(1, n):
+        addNode(root, nodeList[i])
+
+    # traversal
+    answer = [[], []]
+    preorder(answer[0], root)
+    postorder(answer[1], root)
+
     return answer
 
-solution([[5,3],[11,5],[13,3],[3,5],[6,1],[1,3],[8,6],[7,2],[2,2]]	)
+ans = solution([[5,3],[11,5],[13,3],[3,5],[6,1],[1,3],[8,6],[7,2],[2,2]])
+print(ans)
