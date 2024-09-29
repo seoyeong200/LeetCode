@@ -1,11 +1,15 @@
-def solution_timeout(cap, n, deliveries, pickups):
+def solution(cap, n, deliveries, pickups):
 
     answer = 0
-    most_far = n
-    while sum(deliveries) + sum(pickups) > 0:
+    while deliveries or pickups: # 여기서 가장 많이 시간 줄어든다.
+        while deliveries and deliveries[-1] == 0: # 뒤에 0인부분 날리기
+            del(deliveries[-1])
+        while pickups and pickups[-1] == 0:
+            del[pickups[-1]]
+        answer += max(len(deliveries), len(pickups)) * 2
         # 배달 
         cur_cap = cap
-        for deliv_i in range(most_far-1, -1, -1):
+        for deliv_i in range(len(deliveries)-1, -1, -1):
             if deliveries[deliv_i] <= cur_cap: 
                 cur_cap -= deliveries[deliv_i]
                 deliveries[deliv_i] = 0
@@ -14,21 +18,18 @@ def solution_timeout(cap, n, deliveries, pickups):
                 break
         # 수거
         cur_cap = cap
-        for pick_i in range(most_far-1, -1, -1):
+        for pick_i in range(len(pickups)-1, -1, -1):
             if pickups[pick_i] <= cur_cap:
                 cur_cap -= pickups[pick_i]
                 pickups[pick_i] = 0
             else:
                 pickups[pick_i] -= cur_cap
                 break
-        answer += most_far * 2
-        # 다음 배달에 설정할 가장 먼 집 인덱스) 0보다 큰 최대 인덱스
-        most_far = max(deliv_i, pick_i) + 1
         
     return answer
 
 
-def solution(cap, n, deliveries, pickups):
+def solution_2(cap, n, deliveries, pickups):
     answer = 0
     most_far = n
 
